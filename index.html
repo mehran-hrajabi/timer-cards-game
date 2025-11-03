@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button id="resetAllBtn" class="reset-btn">Reset All</button>
+
+    <!-- Sentence Input -->
+    <input id="sentenceInput" type="text" placeholder="Enter your option..." />
+    <button id="addBtn" class="add-btn">Add Option</button>
+    <button id="startBtn" class="start-btn">Shuffle & Start / Restart</button>
+
+    <div id="sentenceContainer"></div>
+
+    <!-- Timer Section -->
+    <div class="timer-container">
+      <button id="randomTimerBtn" style="background: #0077ff">Get Time</button>
+      <button id="startTimerBtn" style="background: #00b34a">Start</button>
+    </div>
+    <input
+      id="customTimeInput"
+      type="number"
+      placeholder="Enter minutes..."
+      style="
+        display: none;
+        width: 50%;
+        margin: auto;
+        font-size: 18px;
+        padding: 12px;
+      "
+    />
+    <div
+      id="timeDisplay"
+      style="font-size: 28px; margin-top: 10px; text-align: center"
+    ></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
