@@ -231,8 +231,6 @@ function startCountdown() {
 
   startTimerBtn.disabled = true;
   randomTimerBtn.disabled = true;
-  addBtn.disabled = true;
-  startBtn.disabled = true;
 
   timerInterval = setInterval(() => {
     remainingSeconds--;
@@ -266,8 +264,6 @@ function startCountdown() {
 
       startTimerBtn.disabled = false;
       randomTimerBtn.disabled = false;
-      addBtn.disabled = false;
-      startBtn.disabled = false;
       return;
     }
   }, 1000);
